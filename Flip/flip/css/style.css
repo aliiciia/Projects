@@ -1,0 +1,595 @@
+html{
+background-color: #707359;
+}
+
+body{
+width: 960px;
+margin: 0 auto;
+}
+
+#wrapper{
+    clear: left;
+}
+
+/* -------------------------------------------- landing --------------------------------------------------------   */
+
+a{
+    cursor: pointer;
+}
+
+h1{
+ background: url(../images/logo.png) no-repeat;
+ text-indent: -999999999px;
+height: 120px;
+    margin: 28px 0 30px 30px;
+    width: 280px;
+    float:left;
+}
+
+h1 a{
+	display: block;
+	height:120px;
+	outline: none;
+        
+}
+
+li{
+   list-style-type: none;
+}
+
+#Error{
+    color: #FFE436;
+     float: right;
+      font-size: 30px;
+}
+
+#ErrorTop{
+    color: #FFED75;
+      font-size: 26px;
+}
+
+#loginform{
+   padding: 60px 30px 0px 0px;
+}
+
+
+#input{
+    float: right;
+}
+
+#click{
+     margin-left: 90px;
+}
+
+#field input{
+    font-size: 16px;
+    font-family: optima;
+    width: 175px;
+    height: 25px;
+    border: 2px solid #006838;
+    text-align: left;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    
+background: #ffffff;
+background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(#E2E2E2));
+background: -webkit-linear-gradient(#ffffff, #E2E2E2);
+background: -moz-linear-gradient(#ffffff, #E2E2E2);
+background: -ms-linear-gradient(#ffffff, #E2E2E2);
+background: -o-linear-gradient(#ffffff, #E2E2E2);
+background: linear-gradient(#ffffff, #E2E2E2);
+}
+
+#login{
+    float:right;
+    padding-right: 40px
+    
+}
+
+.login{
+    margin-left: 60px;
+    
+}
+
+#login input{
+    font-size: 20px;
+    font-family: optima;
+    width: 250px;
+    height: 35px;
+    border: 2px solid #C49A6C;
+    text-align: left;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    margin: 10px;
+background: #ffffff;
+background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(#E2E2E2));
+background: -webkit-linear-gradient(#ffffff, #E2E2E2);
+background: -moz-linear-gradient(#ffffff, #E2E2E2);
+background: -ms-linear-gradient(#ffffff, #E2E2E2);
+background: -o-linear-gradient(#ffffff, #E2E2E2);
+background: linear-gradient(#ffffff, #E2E2E2);
+}
+
+#myform{
+border: 3px solid #777862;
+text-align: left ;
+width: 940px;
+height: 395px;
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+  margin: 7px;
+background: #BFB895;
+background: -webkit-gradient(linear, 0 0, 0 bottom, from(#BFB895), to(#BFB895));
+background: -webkit-linear-gradient(#BFB895, #BFB895);
+background: -moz-linear-gradient(#BFB895, #BFB895);
+background: -ms-linear-gradient(#BFB895, #BFB895);
+background: -o-linear-gradient(#BFB895, #BFB895);
+background: linear-gradient(#BFB895, #BFB895);
+}
+
+#myform p{
+    
+    font-size: 24px;
+    font-family: "Helvetica Neue";
+    color: #304C73;
+   width: 500px;
+ Padding-left: 40px;
+}
+
+h2{
+    color: #fff;
+    font-size: 60px;
+    font-family: "Goudy Old Style";
+    Padding-left: 40px;
+    height: 40px;
+}
+
+#info1 img{
+    
+}
+
+#info1{
+        float: left;
+
+    width: 250px;
+    margin: 40px 35px;
+}
+
+h3{
+     color: #fff;
+    font-size: 30px;
+    font-family: "Goudy Old Style";
+    width: 120px;
+    float: right;
+    margin-right: 50px;
+}
+
+#info1 p{
+    color: #B1D4E0;
+    font-size: 16px;
+    font-family: "Helvetica Neue";
+    width: 175px;
+    margin-left: 80px;
+}
+
+
+button{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #0d0d0d;
+	width: 80px;
+	height: 30px;
+	background: -moz-linear-gradient(
+		top,
+		#faf2fa 0%,
+		#ebe4eb 0%,
+		#c5d9e8);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#faf2fa),
+		color-stop(0.0, #ebe4eb),
+		to(#c5d9e8));
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border: 2px solid #213f9a;
+	
+}
+
+
+
+#footer{
+    clear: both;
+    width: 960px;
+    background: #BFB895;
+    font-size: 16px;
+    font-family: optima;
+    height: 23px;
+}
+
+#footer a{
+    
+    margin: 0px 40px;
+}
+/* -------------------------------------------- app --------------------------------------------------------   */
+
+#projectBorder{
+    width: 300px;
+    height: 600px;
+    background: #D1CBB2;
+    border: 2px solid #7C7C6B;
+    float: left;
+    
+}
+
+#taskBorder{
+    border: 3px solid #777862;
+text-align: left;
+width: 580px;
+height: 600px;
+overflow:scroll;
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+  margin: 0 0 30px 375px;
+background: #BFB895;
+background: -webkit-gradient(linear, 0 0, 0 bottom, from(#BFB895), to(#BFB895));
+background: -webkit-linear-gradient(#BFB895, #BFB895);
+background: -moz-linear-gradient(#BFB895, #BFB895);
+background: -ms-linear-gradient(#BFB895, #BFB895);
+background: -o-linear-gradient(#BFB895, #BFB895);
+background: linear-gradient(#BFB895, #BFB895);
+}
+
+button.edit{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #0d0d0d;
+	width: 150px;
+	height: 30px;
+	float: left;
+	margin-top: 15px;
+	margin-left: 15px;
+	background: -moz-linear-gradient(
+		top,
+		#faf2fa 0%,
+		#ebe4eb 0%,
+		#c5d9e8);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#faf2fa),
+		color-stop(0.0, #ebe4eb),
+		to(#c5d9e8));
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border: 2px solid #213f9a;
+	
+}
+
+button.probutton {
+	font-family: "Goudy Old Style";
+	font-size: 20px;
+	color: #000;
+	width: 270px;
+	height: 42px;
+	margin: 10px 15px;
+    border: 2px solid #B1D4E0;
+    text-align: left;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+background: #ffffff;
+background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(#E2E2E2));
+background: -webkit-linear-gradient(#ffffff, #E2E2E2);
+background: -moz-linear-gradient(#ffffff, #E2E2E2);
+background: -ms-linear-gradient(#ffffff, #E2E2E2);
+background: -o-linear-gradient(#ffffff, #E2E2E2);
+background: linear-gradient(#ffffff, #E2E2E2);
+}
+
+.probutton a{
+    color: #21409A;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+   float: right;
+   margin-right: 10px;
+}
+
+#deleteP{
+    float:right;
+    color: #FF1122;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px 10px;
+    border-bottom: 3px solid #FF1122;
+}
+
+
+#bigBox{
+      width: 510px;
+    height: 100px;
+    background: #fff;
+     margin: 5px 15px;
+     border: 3px solid #000;
+}
+
+#bigBox1{
+      width: 510px;
+    height: 120px;
+    background: #fff;
+     margin: 10px 15px;
+     border: 3px solid #000;
+}
+
+
+#Box{
+     width: 550px;
+    height: 40px;
+    background: #fff;
+    margin: 5px 15px;
+}
+
+
+#message 1{
+    clear: both;
+     
+}
+
+#message{
+    width: 510px;
+    height: 45px;
+     margin: 5px 15px;
+     border: 3px solid #000;
+}
+
+#dropDown{
+      width: 550px;
+    height: 280px;
+    background: #fff;
+     margin: 10px 15px;
+}
+
+h4{
+    float: left;
+    font-family: "Goudy Old Style";
+    font-size: 18px;
+    color: #21409A;
+    padding: 0px;
+    margin: 5px 10px;
+}
+
+#create{
+   margin-right: 20px;
+   float: right;
+}
+
+#taskbar{
+    padding-top: 50px;
+}
+
+
+#addTask{
+     width: 100px;
+    height: 15px;
+}
+
+#level{
+    float:right;
+    margin: 15px 10px;
+}
+
+#modification{
+    margin: 5px 15px;
+}
+
+button.modify {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #ffffff;
+	width: 100px;
+	height: 25px;
+	 margin-left: 10px;
+	float:right;
+	background: -moz-linear-gradient(
+		top,
+		#cced8a 0%,
+		#5fae23);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#cced8a),
+		to(#5fae23));
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border: 2px solid #4e9914;
+	text-shadow:
+		1px 0px 0px rgba(097,174,014,0.1),
+		0px 0px 0px rgba(255,255,255,0.1);
+}
+
+
+/* -------------------------------------------- Project --------------------------------------------------------   */
+
+
+#bottomc{
+    color: #ff0000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin: 0 25px;
+}
+
+#bottom{
+    float: right;
+}
+#welcome{
+    float:right;
+    margin-right: 40px;
+    text-align: right;
+    color: #B1D4E0;
+}
+
+#welcome a{
+  
+    color: #B1D4E0;
+}
+
+#filler{
+border: 3px solid #777862;
+text-align: left;
+width: 880px;
+height: 690px;
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+  margin: 30px  auto;
+padding-top: 20px;
+background: #BFB895;
+background: -webkit-gradient(linear, 0 0, 0 bottom, from(#BFB895), to(#BFB895));
+background: -webkit-linear-gradient(#BFB895, #BFB895);
+background: -moz-linear-gradient(#BFB895, #BFB895);
+background: -ms-linear-gradient(#BFB895, #BFB895);
+background: -o-linear-gradient(#BFB895, #BFB895);
+background: linear-gradient(#BFB895, #BFB895);
+}
+
+button.save {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color: #ffffff;
+	width: 100px;
+	height: 30px;
+	background: -moz-linear-gradient(
+		top,
+		#cced8a 0%,
+		#5fae23);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#cced8a),
+		to(#5fae23));
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border: 2px solid #4e9914;
+	text-shadow:
+		1px 0px 0px rgba(097,174,014,0.1),
+		0px 0px 0px rgba(255,255,255,0.1);
+}
+
+#messageT{
+    margin: 5px 22px;
+}
+
+#messageV{
+    width: 834px;
+    height: 146px;
+     margin: 15px 0px;
+}
+
+#projectname{
+     width: 630px;
+    height: 35px;
+     color: #000;
+    font-size: 30px;
+    font-family: "Goudy Old Style";
+    margin: 20px 0 10px 22px;
+}
+
+#taskname{
+     width: 750px;
+    height: 35px;
+    color: #000;
+    font-size: 25px;
+    font-family: "Goudy Old Style";
+     margin: 10px 22px;
+}
+
+#holder{
+     width: 834px;
+    height: 215px;
+    background: #fff;
+     margin: 15px 22px;
+}
+
+#time input{
+    
+    background-color: #F1F2F2;
+    border: 1px solid #A7A9AC;
+    width: 150px;
+    height: 25px;
+    margin: 15px 10px 10px;
+    padding-top: 0px;
+    
+}
+
+#time{
+    margin: 20px 20px;
+    
+}
+
+#time p{
+    margin:  20px 15px;
+    height: 25px;
+}
+
+#priority1{
+    margin:  35px 35px;
+}
+
+#cal{
+    padding-top: 0px;
+    margin-top: 15px;
+}
+
+#clo{
+    
+}
+
+/* -------------------------------------------- Account --------------------------------------------------------   */
+
+
+#appfiller {
+    background: -moz-linear-gradient(#BFB895, #BFB895) repeat scroll 0 0 transparent;
+    border: 3px solid #777862;
+    border-radius: 8px 8px 8px 8px;
+    height: 460px;
+    margin: 30px auto;
+    padding-top: 20px;
+    width: 880px;
+    text-align: right;
+   
+}
+
+
+#accform input {
+    background: -moz-linear-gradient(#FFFFFF, #E2E2E2) repeat scroll 0 0 transparent;
+    border: 2px solid #C49A6C;
+    border-radius: 8px 8px 8px 8px;
+    font-family: optima;
+    font-size: 20px;
+    height: 35px;
+    margin: 15px 240px 15px 15px;
+    text-align: left;
+    width: 300px;
+
+}
+
+#accform label{
+font-family: optima;
+font-size: 24px;
+color: white;
+}
+
+#saveAcc{
+ margin: 15px 240px 15px 15px;
+}
+
+
+
+
+
+
+
+

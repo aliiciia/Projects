@@ -1,0 +1,230 @@
+<!-- 
+	You can store multiple templates for your application here
+	These templates should be singular portions of your app, such as a single task layout
+	
+	Each template should be contained in a script tag with an id, such as the example below.
+	DO NOT include <html>, <head>, or <body> tags
+	
+	$.fetcher("components.html #taskTemplate", callback);
+-->
+
+
+<!-- DEMO TEMPLATES (you can delete these) -->
+
+
+<script type="text/tmpl" id="taskTemplate">
+	
+	    <div id="header">
+
+    <h1><a></a></h1>     
+    
+    <div id="welcome">
+     <p>Welcome, Memeber</p>
+      <a id="account"> My Account</a><br/>
+    <a id="logout" >Sign Out</a>
+    </div>
+    </div>
+    
+    <div id="wrapper">
+	
+	<div id="filler" projectID="{{=id}}">
+		 <form id="name" name="end" method="post">
+                    <input type="text "id="projectname" value="{{=projectname}} project Name"></input>
+		    <input type="text "id="taskname" value="{{=primaryContactName}}  primary Contact Name"></input>
+                     </form>
+		
+	
+                    <form id="messageT" name="message" method="post">
+                    <textarea name="message" id="messageV" cols="28" rows="5">{{=taskDescription}}</textarea>
+		      <p>Text Format</p>
+		   </form>
+                 
+		 <div id="holder">
+		 <div id="time">	
+                <form id="start" name="start" method="post">
+                    <p><label for="start">Start: </label>
+                    <input type="text "id="startDate" value="{{=startDate}}"></input>
+                    
+                     </form>
+                    
+                     <form id="end" name="end" method="post">
+                    <p><label for="end">End: </label>
+                     <input type="text "id="dueDate" value="{{=dueDate}}"></input>
+                    
+                     </form>     
+		     </div>
+		 
+                     <form id="priority1" name="priority" method="post">
+                    <p><label for="priority">Priority: </label>
+                    <input type="radio" name="priority" value="{{=priority}}" > Low 
+                    <input type="radio" name="priority" value="{{=priority}}"> Medium 
+                    <input type="radio" name="priority" value="{{=priority}}"> High </p>
+		    <p><label for="created">Created By: </label>
+                    <input type="text "id="created" value="{{=assignedTo}}"></input>
+                    </form>
+		   </div>
+		 
+		     <div id='bottom'>
+		    <a id="saveproject"  projectID="{{=id}}" type="submit"><button type="button" class="save" >Save</button></a>
+		    <a id="bottomc">Cancel</a> 
+		</div>
+	
+	</div> 
+        
+    </div>
+    
+    <div id="footer"> <a>Flip&copy; 2012</a> <a>Home</a> <a>Management</a> <a>About</a> <a>Terms Of Use</a> <a>Pivacy Policy</a></div>
+	
+</script>
+
+
+<script type="text/tmpl" id="projectTemplate">
+
+	 <button class="probutton" type="submit" projectID="{{=id}}">{{=projectName}}</button>
+	
+</script>
+
+
+<script type="text/tmpl" id="clientTemplate">
+
+		<div class="task" projectID="{{=id}}">
+		<div id="Box">
+		<h4>{{=taskName}}</h4> <h4 id="create">Created By: {{=assignedTo}}</h4>
+		</div>
+		</div>
+</script>
+
+
+<script type="text/tmpl" id="addTaskTemplate">
+
+	<div id="dropDown">
+	
+			<h4 id="name">{{=taskName}}</h4> <h4 id="create">Created By: {{=assignedTo}}</h4>
+                <div id="messageForm">
+                    <form id="message1" name="message" method="post">
+                    <textarea name="message" id="message" cols="55" rows="10">{{=taskDescription}}</textarea>
+                    </form>
+                </div>
+                 <div id="bigBox">
+			
+			 <label id="level" for="level">PriorityLevel: {{=priority}} </label>
+                     <form id="startT" name="start" method="post">
+                    <p><label for="start">Start: </label>
+                    <input type="text "id="startDate" value="{{=startDate}}"></input>
+                     </form>
+                    
+                     <form id="endT" name="end" method="post">
+                    <p><label for="end">End: </label>
+                    <input type="text "id="dueDate" value="{{=dueDate}}"></input>
+                     </form>
+		     
+		    
+                      </div>     
+		
+                 <div id='modification'>
+			<a id="savemod" taskID="{{=id}}" type="submit"><button type="button"  class="modify">Save</button></a>
+			
+		     <p><a id="quit" href="#">Cancel</a>  |  <a id="fix"  href="#">Duplicate</a>  |  <a id="trash" taskID="{{=id}}" href="#">Delete</a> </p>
+		    
+		</div>
+	
+	
+</script>
+
+
+<script type="text/tmpl" id="accountTemplate">
+	
+	   <div id="header">
+	
+    <h1><a></a></h1>
+    
+    <div id="welcome">
+     <p>Welcome, Member</p>
+      <a id="account"> My Account</a><br/>
+    <a id="logout" >Sign Out</a>
+    </div>
+    </div>
+    
+    <div id="wrapper">
+        
+	<div id="appfiller">
+		
+		<form id="accountForm" name="accountFform" method="Get">
+         
+	  <div id="accform">
+                <ul>
+		<li>	
+		<label>ID:</label>
+			<input type="text" id="id" value="{{=id}}"/>
+		    </li>
+	           <li>
+			<label>First Name:</label>
+			<input type="text" id="firstname" value="{{=first_name}}"/>
+		    </li>
+		    <li>
+			<label>Last Name:</label>
+			<input type="text" id="lastname" value="{{=last_name}}"/>
+		    </li>
+		    <li>
+			<label>Username:</label>
+			<input type="text" id="username" value="{{=user_n}}"/>
+		    </li>
+  		    <li>
+			<label>Email:</label>
+			<input type="text" id="email" value="{{=email}}"/>
+  		    </li>
+                </ul>
+		<a id="saveAcc" type="submit"><button type="submit" class="saveAcc" >Save</button></a>
+		</div>
+		</form>
+		 
+	 </div>
+	<div id="footer"> <a>Flip&copy; 2012</a> <a>Home</a> <a>Management</a> <a>About</a> <a>Terms Of Use</a> <a>Pivacy Policy</a></div>
+    
+	
+	
+</script>
+
+
+
+
+
+
+
+<script type="text/tmpl" id="addTask">
+	
+	<div id="dropDown">
+	
+			<h4 id="name">Name:<input type="text "id="Tname" value="{{=taskName}}"></h4> <h4 id="create">Created By: <input type="text "id="create" value="{{=taskCreator}}"></h4>
+                <div id="messageForm">
+                    <form id="message1" name="message" method="post">
+                    <textarea name="message" id="message" cols="55" rows="10">{{=taskDescription}}</textarea>
+                    </form>
+                </div>
+                 <div id="bigBox1">
+			
+			 <p><label for="priority">Priority: </label>
+                    <input type="radio" name="priority" value="{{=priority}}" > Low 
+                    <input type="radio" name="priority" value="{{=priority}}"> Medium 
+                    <input type="radio" name="priority" value="{{=priority}}"> High </p>
+                     <form id="startT" name="start" method="post">
+                    <p><label for="start">Start: </label>
+                    <input type="text "id="startDate" value="{{=startDate}}"></input>
+                     </form>
+                    
+                     <form id="endT" name="end" method="post">
+                    <p><label for="end">End: </label>
+                    <input type="text "id="dueDate" value="{{=dueDate}}"></input>
+                     </form>
+		     
+		    
+                      </div>     
+		
+                 <div id='modification'>
+			<a id="saveTask" ProjectID="{{=id}}" type="submit"><button type="button"  class="modify">Save</button></a>
+		     <p><a id="quit" href="#">Cancel</a></p>
+		    
+		</div>
+	
+</script>
+

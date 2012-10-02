@@ -1,0 +1,79 @@
+<!-- 
+	Put the skeleton HTML for your Landing page here
+	DO NOT include <html>, <head>, or <body> tags
+	
+	$.fetcher("templates/landing.html", callback);
+-->
+
+
+<script type="text/tmpl" id="template_landing">
+
+	<div id="header">
+	
+    <h1><a></a></h1>
+    <form id="loginform" name="loginform" method="post">
+	<div id="input">
+	
+		<div id="field">
+		<div id="ErrorTop"><p> </p></div>
+		<input type="text" id="uname" value='username'></input>
+		<input type="password" id="pword" value="password"></input> 
+		<a id="signin"><button type="button" >Sign In</button></a> <br/>
+	</div>	
+		<input type="checkbox" name="checkbox" value="check" />Remeber me
+		<a id="click">Forgot Password?</a>
+		
+	</div>
+	</form>
+</div>
+
+<div id="wrapper">
+
+	
+	
+	 <form id="myform" name="myform" method="post">
+         
+	  <div id="login">
+                <ul>
+	           <li>	
+			<input type="text" id="firstname" value="First Name"/>
+		    </li>
+		    <li>	
+			<input type="text" id="lastname" value="Last Name"/>
+		    </li>
+		    <li>	
+			<input type="text" id="username" value="Username"/>
+		    </li>
+  		    <li>
+			<input type="password" id="password" value="Password"/>  
+		    </li>
+  		    <li>
+			<input type="text" id="email" value="Email"/>
+  		    </li>
+                </ul>
+		<a id="regButton" type="submit"><button type="submit" class="login" >Log In</button></a>
+		</div>
+
+		    <div id="Error"><p> </p></div>
+		    
+		<h2><b>What is Flip?</b></h2>
+		     
+	  <p>Flip is a Task Manager where we make it easy for you to deliver on time.</p>
+	  <p>Sign up now for <b id="free">free</b> It will only take a few seconds. then you will be on your way to a great user experiece Flip has to offer.</p>
+        </form>
+	
+	<div id="info1">
+            <img src="images/note.png"/> <h3>Management</h3> <p>Manage, Organize, update, modify, and save all your tasks easiy.</p>
+        </div>
+        <div id="info1">
+           <img src="images/calander.png"/> <h3>Reminders</h3> <p>Recieve reminders and notifications on the days of your choice.</p>
+        </div>
+        <div id="info1">
+            <img src="images/clock.png"><h3>On Time</h3></img> <p>You will never have to worry about a late deadline again!! Your projects will always be due on time.</p>
+        </div>
+	
+</div>
+
+<div id="footer"> <a>Flip&copy; 2012</a> <a>Home</a> <a>Management</a> <a>About</a> <a>Terms Of Use</a> <a>Pivacy Policy</a></div>
+
+</script>

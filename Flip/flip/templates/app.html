@@ -1,0 +1,41 @@
+<!-- 
+	Put the skeleton HTML for your Application here
+	DO NOT include <html>, <head>, or <body> tags
+	
+	$.fetcher("templates/app.html", callback);
+-->
+
+
+<script type="text/tmpl" id="template_app">
+
+ <div id="header">
+	
+    <h1><a></a></h1>
+    
+    <div id="welcome">
+     <p>Welcome, Member</p>
+    <a id="account"> My Account</a><br/>     
+    <a id="logout" >Sign Out</a>
+    </div>
+    </div>
+    
+    <div id="wrapper">
+        
+	 <div id="projectBorder">
+	<a id="goTask"><button type="button" class="edit" >Create New Project</button></a>
+	<div id="projectbar">
+	 
+	</div>
+	</div>
+	
+	
+        <div id="taskBorder">
+		<a id="createTask" ProjectID="{{=id}}"><button type="button" class="edit">Create New Task</button></a>
+		<b><a id="deleteP" projectID="{{=id}}" >Delete Project</a></b>
+		<div id="taskbar">
+		</div>
+		</div>
+	 </div>
+	<div id="footer"> <a>Flip&copy; 2012</a> <a>Home</a> <a>Management</a> <a>About</a> <a>Terms Of Use</a> <a>Pivacy Policy</a></div>
+	
+</script>
