@@ -18,4 +18,3 @@ The MegaMindz
 TheMegaMindz is a website about a producer showcasing his talent and interest. 
 The user will get the opportunity to buy or lease the instrumentals. Users will also be able to view videos, photos, and contact the The MegaMindz. 
 Technologies: HTML, CSS, PHP, JQuery, JavaScript, FuelPHP, Sound Cloud player, Twitter APi, PayPal Api, MySQL
-http://www.megamindzmusic.com
